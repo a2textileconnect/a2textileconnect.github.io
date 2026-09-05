@@ -451,7 +451,7 @@ nav a:hover {
 /* Contact */
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   max-width: 640px;
 }
@@ -644,6 +644,11 @@ nav a:hover {
 @media (max-width: 640px) {
   .process {
     grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
   }
 
   .footer-grid {
